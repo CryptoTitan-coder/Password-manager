@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body style= font-family:" Arial",  "sans-serif";margin:"0";padding: "0";background-color:  "#f4f4f4" ;>
+    <header style=background-color: #333;color: #fff;padding: 1rem;text-align: center;>
+        <h1>Password Manager</h1>
+    </header>
+    <main style=padding:2rem;>
+        <section id="auth-section">
+            <form id="login-form" style=margin-bottom:1rem;>
+                < h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;>
+                <input type="password" id="password" placeholder="Password" required  style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;> 
+                <button type="submit" style=background-color: #333;color: #fff;border: none;cursor: pointer;>Login</button>
+            </form>
+            <form id="register-form" style=margin-bottom:1rem;>
+                <h2>Register</h2>
+                <input type="text" id="reg-username" placeholder="Username" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;>
+                <input type="password" id="reg-password" placeholder="Password" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;>
+                <button type="submit" style=background-color: #333;color: #fff;border: none;cursor: pointer; >Register</button>
+            </form>
+        </section>
+        <section id="password-manager" style="display:none;">
+            <h2>Manage Passwords</h2>
+            <form id="password-form" style=margin-bottom:1rem;>
+                <input type="text" id="site" placeholder="Site" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;>
+                <input type="text" id="username" placeholder="Username" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;> 
+                <input type="password" id="password" placeholder="Password" required style=display: block;margin: 0.5rem 0;padding: 0.5rem;width: 100%;>
+                <button type="submit" style=background-color: #333;color: #fff;border: none;cursor: pointer;>Save</button>
+            </form>
+            <div id="password-list">
+                <!-- List of saved passwords will go here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
